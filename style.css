@@ -1,0 +1,90 @@
+body {
+  font-family: 'Cinzel Decorative', cursive;
+  background: url('https://i.imgur.com/pDcSMY4.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px #000;
+}
+
+.houses {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.house {
+  width: 220px;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 1.2em;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s;
+}
+
+.house:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.gryffindor { background-color: rgba(174, 0, 1, 0.85); }
+.slytherin   { background-color: rgba(0, 100, 0, 0.85); }
+.ravenclaw   { background-color: rgba(25, 25, 112, 0.85); }
+.hufflepuff  { background-color: rgba(255, 215, 0, 0.85); }
+
+.points {
+  font-size: 2.5em;
+  margin-top: 10px;
+  font-weight: bold;
+  animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.admin-section {
+  margin-top: 50px;
+}
+
+input, select, button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+.parchment {
+  background: url(https://i.imgur.com/RXpU7q5.png') repeat;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #000;
+}
+
+.hidden {
+  display: none;
+}

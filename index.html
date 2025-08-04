@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>House Points Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>🏰 House Points Tracker</h1>
+
+  <div class="houses">
+    <div class="house gryffindor">
+      <img src="https://i.imgur.com/cp6O0YY.jpeg" alt="Lion" class="icon"/>
+      <h2>Beckett</h2>
+      <div class="points" id="beckett-points">0</div>
+    </div>
+    <div class="house slytherin">
+      <img src="https://i.imgur.com/2dgG4A7.jpeg" alt="Snake" class="icon"/>
+      <h2>Shepherd</h2>
+      <div class="points" id="shepherd-points">0</div>
+    </div>
+    <div class="house ravenclaw">
+      <img src="https://i.imgur.com/37cxJR6.jpeg" alt="Eagle" class="icon"/>
+      <h2>Maisie</h2>
+      <div class="points" id="maisie-points">0</div>
+    </div>
+    <div class="house hufflepuff">
+      <img src="https://i.imgur.com/mpq7RtT.jpeg" alt="Badger" class="icon"/>
+      <h2>Sylvie</h2>
+      <div class="points" id="sylvie-points">0</div>
+    </div>
+  </div>
+
+  <div class="admin-section">
+    <h2>🔐 Admin Panel</h2>
+    <input type="password" id="pin-input" placeholder="Enter Admin PIN" />
+    <button onclick="unlockAdmin()">Unlock</button>
+
+    <div id="admin-controls" class="hidden parchment">
+      <h3>Modify Points</h3>
+      <select id="child-select">
+        <option value="shepherd">Shepherd</option>
+        <option value="beckett">Beckett</option>
+        <option value="sylvie">Sylvie</option>
+        <option value="maisie">Maisie</option>
+      </select>
+      <input type="number" id="points-input" placeholder="Points" />
+      <button onclick="addPoints()">Add Points</button>
+      <button onclick="subtractPoints()">Subtract Points</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
